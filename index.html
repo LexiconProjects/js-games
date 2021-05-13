@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>JS Games</title>
+</head>
+
+<body class="text-center">
+
+    <div class="row">
+
+        <div class="col bg-warning">
+            <h1>Animate me!</h1>
+            <h4 id="rotate-string" style = "color: red;">Lexicon</h4>
+            <br>
+            <input type="button" onclick="rotateString()" value="Rotate the string">
+            <input type="button" onclick="stopStringRotation()" value="Stop the string">
+
+        </div>
+
+
+        <div class="col">
+            <h1>Guessing Game!</h1>
+
+            <h4>Enter a number between 1-10 to see if you can guess the number!</h4>
+            <input id="number-guess">
+            <input type="button" onclick="guessNumber()" value="Check number!">
+            <br>
+            <p id="guess-result"></p>
+        </div>
+
+        <div class="col bg-danger">
+            <h1>Days left until Christmas?</h1>
+
+            <input type="button" onclick="calculateDaysUntilXmas()" value="Calculate!">
+            <br>
+            <p id="days-until-Xmas"></p>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col bg-success text-white">
+            <h1>Create new words!</h1>
+
+            <p>Write your word to be changed: </p>
+            <input type="text" id="input-string">
+            <input type="button" onclick="changeString()" value="Change me!">
+            <br>
+            <p id="output-string"></p>
+        </div>
+
+        <div class="col bg-success text-white">
+            <h1>Closest to 100</h1>
+            <p>Enter two numbers and check which one is closer:</p>
+            <input type="number" id="number-input-a">
+            <input type="number" id="number-input-b"> 
+            <input type="button" onclick="getClosestTo100()" value="Get result!">
+            <br>
+            <p id="closest-input"></p>
+        </div>
+ 
+
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>
